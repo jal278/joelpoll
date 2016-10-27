@@ -1,0 +1,51 @@
+S 01 .Alabama/AL           
+W 02 .Alaska/AK                               
+W 04 .Arizona/AZ                              
+S 05 .Arkansas/AR                             
+W 06 .California/CA                           
+W 08 .Colorado/CO                             
+NE 09 .Connecticut/CT                          
+S 10 .Delaware/DE                             
+S 11 .District of Columbia/VA                 
+S 12 .Florida/FL                              
+S 13 .Georgia/GA                              
+W 15 .Hawaii/HI                               
+W 16 .Idaho/ID                                
+MW 17 .Illinois/IL                             
+MW 18 .Indiana/IN                              
+MW 19 .Iowa/IA                                 
+MW 20 .Kansas/KS                               
+S 21 .Kentucky/KY                             
+S 22 .Louisiana/LA                            
+NE 23 .Maine/ME                                
+S 24 .Maryland/MD                             
+NE 25 .Massachusetts/MA                        
+MW 26 .Michigan/MI                             
+MW 27 .Minnesota/MN                            
+S 28 .Mississippi/MS                          
+MW 29 .Missouri/MO                             
+W 30 .Montana/MT                              
+MW 31 .Nebraska/NE                             
+W 32 .Nevada/NV                               
+NE 33 .New Hampshire/NH                        
+NE 34 .New Jersey/NJ                           
+W 35 .New Mexico/NM                           
+NE 36 .New York/NY                             
+S 37 .North Carolina/NC                       
+MW 38 .North Dakota/ND
+MW 39 .Ohio/OH                                 
+S 40 .Oklahoma/OK                             
+W 41 .Oregon/OR                               
+NE 42 .Pennsylvania/PA                         
+NE 44 .Rhode Island/RI                         
+S 45 .South Carolina/SC                       
+MW 46 .South Dakota/SD                         
+S 47 .Tennessee/TN                            
+S 48 .Texas/TX                                
+W 49 .Utah/UT                                 
+NE 50 .Vermont/VT                              
+S 51 .Virginia/VA                             
+W 53 .Washington/WA                           
+S 54 .West Virginia/WV                        
+MW 55 .Wisconsin/WI                            
+W 56 .Wyoming/WY                              

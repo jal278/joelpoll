@@ -35,7 +35,8 @@ def age_bracket(age):
 
 #add additional derived fields to data
 def make_derivative_properties(s):
- s['region'] = regionize(s['state']) 
+ if 'region' not in s:
+  s['region'] = regionize(s['state']) 
  s['age_discrete'] = age_bracket(s['age'])
 
 #find closest matches to a given census sample in the survey data
@@ -64,10 +65,16 @@ def create_intermediate(sample):
     age = sample['age']
     _gender = sample['gender']
     _mar = sample['marital']
-    _state = sample['state']
+
+    if 'state' in sample:
+     _state = sample['state']
+    else:
+     _state = ''
+   
     _race = sample['race']
     _latino = sample['latino']
     _educ = sample['education']
+    
 
     gender='other'
     try:
@@ -120,7 +127,9 @@ def create_intermediate(sample):
 
     state = str(us.states.lookup(unicode(_state)).abbr)
 
-    return {'age':age,'mar':mar,'state':state,'race':race,'educ':educ,'gender':gender} 
+    intermed = {'age':age,'mar':mar,'state':state,'race':race,'educ':educ,'gender':gender} 
+    if 'region' in sample:
+     intermed['region']=sample['region']
 
 def pull_sample(data,normalized_weights):
     idx = data.index

@@ -14,12 +14,21 @@ generate_weights = False
 #do we want to use the calculated weights, or weight each response equally?
 do_weights=True
 
-#getting rid of MTURK ids
-if False:
- data = p.read_csv("new_poll2.csv")
+#getting rid of MTURK ids and states
+read_orig_data = False
+
+if read_orig_data:
+ data = p.read_csv("mturk.csv")
  headers = open("compact_headers.txt").read().split("\n")[:-1]
  data.columns = headers
  data['id']=xrange(len(data['id']))
+ regions=[]
+ for _ in xrange(data.shape[0]):
+  _state = data.loc[_,'state']
+  state = str(us.states.lookup(unicode(_state)).abbr)
+  regions.append(regionize(state))
+ del data['state']
+ data['region']= regions
  data.to_csv("raw_data.csv")
 
 #read in raw survey data
